@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Odd Fellow Slagelse</title>
+  <meta name="description" content="Flyer med kontaktmuligheder for Odd Fellow Slagelse">
+  <style>
+    :root{
+      --bg:#2b2118;
+      --card:#3a2c20;
+      --text:#f4ead8;
+      --muted:#d8c8ae;
+      --accent:#b08a4a;
+      --fb:#1877f2;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: linear-gradient(180deg, #2b2118 0%, #1f1711 100%);
+      color:var(--text);
+    }
+    .wrap{
+      max-width:760px;
+      margin:0 auto;
+      padding:18px 14px 28px;
+    }
+    .flyer{
+      width:100%;
+      display:block;
+      border-radius:18px;
+      box-shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    .panel{
+      margin-top:16px;
+      background:rgba(58,44,32,.92);
+      border:1px solid rgba(176,138,74,.35);
+      border-radius:18px;
+      padding:18px 16px;
+      box-shadow:0 10px 25px rgba(0,0,0,.2);
+    }
+    h1{
+      font-size:1.35rem;
+      margin:0 0 8px;
+      text-align:center;
+      color:var(--text);
+    }
+    p.lead{
+      margin:0 0 16px;
+      text-align:center;
+      color:var(--muted);
+      line-height:1.45;
+    }
+    .btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      width:100%;
+      text-decoration:none;
+      border-radius:14px;
+      padding:14px 16px;
+      margin:10px 0;
+      font-weight:700;
+      line-height:1.3;
+      transition:transform .05s ease, opacity .2s ease;
+      color:white;
+    }
+    .btn:active{ transform:scale(.99); }
+    .mail{ background:#7a5a2f; }
+    .mail2{ background:#8a6a3c; }
+    .facebook{ background:var(--fb); }
+    .pdf{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(244,234,216,.25);
+    }
+    .small{
+      text-align:center;
+      color:var(--muted);
+      font-size:.95rem;
+      margin-top:14px;
+      line-height:1.45;
+    }
+    .icon{ font-size:1.1rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <img src="flyer.png" alt="Odd Fellow Slagelse flyer" class="flyer">
+
+    <div class="panel">
+      <h1>Kontakt os</h1>
+      <p class="lead">Scan, læs og kontakt os direkte fra din telefon.</p>
+
+      <a class="btn mail" href="mailto:info35@concordia.oddfellow.dk">
+        <span class="icon">✉️</span>
+        <span>Brødre – Broderloge nr. 35 Concordia</span>
+      </a>
+
+      <a class="btn mail2" href="mailto:info28@sct-gertrud.oddfellow.dk">
+        <span class="icon">✉️</span>
+        <span>Søstre – Søsterloge nr. 28 Sct. Gertrud</span>
+      </a>
+
+      <a class="btn facebook" href="https://www.facebook.com/groups/oddfellowslagelse" target="_blank" rel="noopener noreferrer">
+        <span class="icon">📘</span>
+        <span>Besøg Facebook-gruppen</span>
+      </a>
+
+      <a class="btn pdf" href="flyer.png" download="oddfellow-slagelse-flyer.png">
+        <span>Hent flyer som billede</span>
+      </a>
+
+      <div class="small">
+        Mail åbner i dit mailprogram. Facebook åbner gruppen direkte.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
